@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .panel {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            margin: 80px auto;
+            max-width: 900px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-bar div {
+            height: 20px;
+            background-color: #007BFF;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+            font-size: 14px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .flex-container div {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .flex-container div:first-child {
+            margin-left: 0;
+        }
+
+        .flex-container div:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <h1>My Resume</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>About</h2>
+            <p>Hello! My name is John Doe, and I am a passionate web developer with over 5 years of experience in creating dynamic and responsive websites. I specialize in front-end development and have a strong background in JavaScript, HTML, and CSS.</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="progress-bar">
+                <div style="width: 90%;">HTML - 90%</div>
+            </div>
+            <div class="progress-bar">
+                <div style="width: 80%;">CSS - 80%</div>
+            </div>
+            <div class="progress-bar">
+                <div style="width: 75%;">JavaScript - 75%</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Science in Computer Science</strong> - XYZ University (2015-2019)</p>
+            <p><strong>High School Diploma</strong> - ABC High School (2013-2015)</p>
+        </div>
+
+        <div class="section">
+            <h2>Job Experience</h2>
+            <div class="flex-container">
+                <div>
+                    <h3>Web Developer</h3>
+                    <p>ABC Company (2020-Present)</p>
+                    <p>Responsible for developing and maintaining company websites and web applications.</p>
+                </div>
+                <div>
+                    <h3>Intern</h3>
+                    <p>XYZ Solutions (2019-2020)</p>
+                    <p>Assisted in creating dynamic web applications and debugging existing projects.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Address</h2>
+            <p>123 Main Street, Hometown, Country</p>
+        </div>
+    </div>
+</body>
+</html>

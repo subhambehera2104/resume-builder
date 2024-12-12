@@ -1,0 +1,15 @@
+footer {
+    padding: 20px 0; 
+    background-image: url("https://www.w3schools.com/images/background_in_space.webp");
+    margin-top: 2%;
+    height: 890px;
+  }
+  
+  footer .text-left img {
+    margin-left: 50px;
+  }
+  #footer_img{
+    height: 80px;
+    width: 180px;
+}
+  

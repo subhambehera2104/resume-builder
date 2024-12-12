@@ -1,0 +1,13 @@
+#signup_image{
+    height: 450px;
+    object-fit: cover;
+}
+.btn{
+    background-color: #28a745;
+    font-size: 19px;
+    color: #fff;
+}   
+.btn:hover{
+    background-color: #1d8335;
+    color: #fff;
+}

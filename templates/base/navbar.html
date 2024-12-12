@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  
+  <!-- External CSS and Fonts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- External JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      background-color: #fff;
+      z-index: 1;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      padding: 0.5%;
+    }
+
+    #nav_img{
+      height: 60px;
+      width: 190px;
+    }
+
+    .navbar,
+    .navbar .navbar-brand {
+      font-size: 4rem;
+      font-family: 'Playfair Display', serif;
+      color: #000;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: black !important;
+    }
+    
+    .navbar-nav, a{
+        font-family: 'Roboto';
+        color: black;
+        font-size: 20px;
+    }
+    .button-container {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid #D9EEE1; 
+      border-radius: 25px;
+      background-color: #D9EEE1;
+      overflow: hidden;
+    }
+
+    .signup-button {
+      padding: 10px 20px;
+      background-color: #28a745; 
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px 0 0 25px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .signup-button:hover {
+      background-color: #218838; 
+    }
+
+    .login-button {
+      padding: 10px 20px;
+      background-color: transparent;
+      color: #000;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      border: none;
+      cursor: poiuser/signup_pagenter;
+      outline: none;
+    }
+
+    .login-button:hover {
+      background-color: #28a745; 
+      color: white; 
+    }
+    #resumebuilder{
+      border: none;
+      margin-top: 12px;
+      margin-right: 10px;
+      background-color: #fff;
+      color: #777;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Navbar Header -->
+      <div class="navbar-header">
+        <button 
+          type="button" 
+          class="navbar-toggle" 
+          data-toggle="collapse" 
+          data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/">
+          <img src="https://static.resumebuild.com/wp-content/uploads/2020/11/resumebuild.webp" id="nav_img">
+      </a>
+      </div>
+
+      <!-- Navbar Links -->
+      <div id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          {% if data %}
+            <li><a href="/user/dashboard">Dashboard</a></li>
+          {% endif %}
+          <li><a href="/total_job_solution">Total Job Solution</a></li>
+          <li>
+            <select name="conversion type" id="resumebuilder">
+							<option value="ctf">Resume Builder</option>
+							<a href="/user/resume_sample"><option value="ftc">Resume sample</option></a>
+						</select>
+          </li>
+          {% if not data %}
+            <div class="button-container">
+              <a href="/user/signup_page"><button class="signup-button">Sign Up</button></a>
+              <a href="/user/login_page"><button class="login-button">Log in</button></a>
+            </div>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>

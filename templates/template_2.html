@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4; /* Light gray to emulate PDF background */
+            padding: 20px;
+        }
+
+        .resume {
+            background-color: white;
+            width: 210mm; /* A4 width */
+            min-height: 297mm; /* A4 height */
+            margin: 0 auto;
+            padding: 20mm;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header p {
+            margin: 0;
+            font-size: 14px;
+            color: gray;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .section p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume">
+    <!-- Resume Header -->
+    <div class="header">
+        <h1>John Doe</h1>
+        <p>Web Developer | john.doe@example.com | (123) 456-7890</p>
+    </div>
+
+    <!-- Resume Sections -->
+    <div class="section">
+        <h2>Summary</h2>
+        <p>Experienced web developer with a strong background in creating responsive and user-friendly websites. Adept at working with modern web technologies and frameworks.</p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Bootstrap, React, Angular</li>
+            <li>Python, Django, Flask</li>
+            <li>MySQL, PostgreSQL</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Work Experience</h2>
+        <p><strong>Web Developer</strong> - ABC Company (2020 - Present)</p>
+        <ul>
+            <li>Developed and maintained multiple websites and applications.</li>
+            <li>Collaborated with designers and project managers to deliver projects on time.</li>
+        </ul>
+        <p><strong>Junior Developer</strong> - XYZ Inc. (2018 - 2020)</p>
+        <ul>
+            <li>Assisted in developing e-commerce websites using modern frameworks.</li>
+            <li>Optimized website performance and enhanced user experience.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science in Computer Science</strong> - University of Technology (2014 - 2018)</p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+        <p>LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+#login_image {
+    height: 450px;
+    object-fit: cover;
+}
+
+.btn {
+    background-color: #28a745 !important;
+    font-size: 19px !important;
+    color: #fff !important;
+    margin-top: 3%;
+}
+
+.btn:hover {
+    background-color: #1d8335 !important;
+    color: #fff !important;
+}
